@@ -13,7 +13,7 @@ services:
     command: bash -c "rm -rf models/* && rasa train && rasa run --model models --enable-api --cors "*" --debug "
     ports:
     - '5006:5005'
-    public: true
+    # public: true
     networks:
     - all
 
