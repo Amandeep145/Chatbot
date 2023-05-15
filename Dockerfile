@@ -14,7 +14,7 @@ WORKDIR /app
 # upgrade pip version
 RUN pip install --no-cache-dir --upgrade pip
 
-RUN pip install rasa==3.4.4
+RUN pip install rasa
 
 
 RUN pip install psycopg2
