@@ -16,7 +16,7 @@ RUN pip install --no-cache-dir --upgrade pip
 
 RUN pip install rasa
 
-
+RUN pip install pandas
 RUN pip install psycopg2
 
 # RUN pip install -r requirements.txt
