@@ -1,0 +1,78 @@
+version: "3.1"
+
+rules:
+
+- rule: Say hello to the user
+  steps:
+  - intent: greet
+  - action: action_deactivate_loop
+  - action: action_reset_all_slots
+  - action: utter_greet
+  - action: utter_topics
+
+
+
+- rule: Activate ticket Form
+  steps:
+  - intent: ticket_details
+  - action: simple_ticket_form
+  - active_loop: simple_ticket_form
+
+
+- rule: Submit ticket Form
+  condition:
+  - active_loop: simple_ticket_form
+  steps:
+  - action: simple_ticket_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  #- action: action_deactivate_loop
+  - action: action_reset_all_slots
+  - action: utter_topics 
+
+
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: action_deactivate_loop
+  - action: action_reset_all_slots
+  - action: utter_goodbye
+
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: action_deactivate_loop
+  - action: action_reset_all_slots
+  - action: utter_iamabot
+
+
+
+  
+
+- rule: ticket summary
+  steps:
+  - intent: ticket_summary
+  - action: action_deactivate_loop
+  - action: action_reset_all_slots
+  - action: action_ticket_summary
+
+
+- rule: ticket summary
+  steps:
+  - intent: holiday_list
+  - action: action_deactivate_loop
+  - action: action_reset_all_slots
+  - action: action_holiday_list
+
+
+
+- rule: leave balance
+  steps:
+  - intent: leave_balance
+  - action: action_deactivate_loop
+  - action: action_reset_all_slots
+  - action: action_leave_balance
+

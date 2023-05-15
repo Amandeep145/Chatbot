@@ -1,0 +1,207 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - pipeline
+    - good afternoon
+    - /greet{"empCode":"ULBT027", "empName":"Amandeep", "url":"43.dsjdnaj"}
+    - /greet{"empCode":"skdmskmdk", "empName":"sddmn3n323", "url":"http://localhost:5555/"}
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human? 
+
+- intent: ticket_id
+  examples: |
+    - The ticket ID is [5839](ticketid)
+    - Task ID is [3328](ticketid)
+    - Task [38348](ticketid)
+    - TASK ID [49292](ticketid)
+
+# - intent: user_id
+#   examples: |
+#     - The user ID is [5839](userid)
+#     - Task user is [3328](userid)
+#     - Task [38348](userid)
+#     - TASK user [49292](userid)
+
+
+
+
+
+- intent: ticket_details 
+  examples: |
+    - get me ticket details 
+    - what is the status of ticket
+    - Can you give me the details of my ticket?
+    - What's the status of my ticket?
+    - I need to know the details of my ticket.
+    - Can you tell me about my ticket status?
+    - What is the current status of my ticket?
+    - I want to know the details of my ticket.
+    - Can you provide me the status of my ticket?
+    - What's the update on my ticket?
+    - I'm curious about the details of my ticket.
+    - Could you please give me an update on my ticket?
+
+
+- intent: attendance_details 
+  examples: |
+    - get me attendance details 
+    - Can you show me my attendance details?
+    - How many days have I been absent?
+    - I need to know my attendance for this month.
+    - Can you give me a report of my attendance?
+    - What is my attendance percentage for this quarter?
+    - Is there any way to check my attendance record?
+    - Please provide me with my attendance details for the past six months.
+    - How many days of leave do I have left?
+    - Can you let me know if I have any pending attendance requests?
+    - Please show me my attendance record for this year.
+    
+
+- intent: leave_balance
+  examples: |
+    - get me my leave balance 
+    - What are my leave details?
+    - Can you show me my leave history?
+    - How many leave days do I have left?
+    - I want to know my leave balance.
+    - Can you tell me about my leave record?
+    - May I have my leave details please?
+    - What is the status of my leave application?
+    - Show me the details of my previous leaves.
+    - Can you give me a summary of my leave usage?
+    - How many leaves have I taken this year?
+
+
+- intent: ticket_summary
+  examples: |
+    - get my ticket summary
+    - can you tell me my ticket report
+    - get my tickets report
+    - ticket summary
+    - my summary of tickets
+
+
+
+- intent: holiday_list
+  examples: |
+    - when are the holidays ?
+    - get me the holiday list 
+    - Can you tell me the upcoming holidays?
+    - What are the holidays for this year?
+    - When is the next holiday?
+    - Give me the list of holidays.
+    - Is there any holiday coming soon?
+    - Which days are public holidays?
+    - What are the dates for the holidays this year?
+    - Could you provide me with the holiday schedule?
+    - What holidays do we have in the next month?
+    - Tell me the holidays for the current month.
+
+
+
+
+
+
+
+
+# - intent: contact_details 
+#   examples: |
+#     - get me contact details 
+#     - Can you give me the contact details?
+#     - Could you tell me your contact details
+#     - What are the contact details?
+
+
+# - intent: asset_details 
+#   examples: |
+#     - get me asset details 
+#     - Can you give me the asset details?
+#     - Could you tell me your asset details
+#     - What are the asset details?
+#     - list of assets 
+#     - get asset details
